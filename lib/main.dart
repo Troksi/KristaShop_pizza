@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app1/screens/products.dart';
+import 'package:Shop_pizza/screens/products.dart';
 
 void main() {
   runApp(MyApp());
