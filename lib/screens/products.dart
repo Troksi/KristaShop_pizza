@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_Shop_pizza/models/productModel.dart';
-import 'package:flutter_Shop_pizza/screens/detailScreen.dart';
+import 'package:pizza/models/productModel.dart';
+import 'package:pizza/screens/detailScreen.dart';
 
 class ProductsScreen extends StatefulWidget {
   ProductsScreen() : super();

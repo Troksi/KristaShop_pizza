@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_Shop_pizza/models/productModel.dart';
+import 'package:pizza/models/productModel.dart';
 
 class DetailScreen extends StatefulWidget {
   final ProductModel model;
