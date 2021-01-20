@@ -36,6 +36,14 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Placeholder(),
+      bottomNavigationBar: BottomNavigationBar(
+          currentIndex: _currentIndex,
+          items:[
+      BottomNavigationBarItem(icon:Icon(Icons.list),label: "Меню"),
+      BottomNavigationBarItem(icon:Icon(Icons.list),label: "Корзина"),
+      BottomNavigationBarItem(icon:Icon(Icons.list),label: "Профиль"),
+      ],
+      ),
     );
   }
 }

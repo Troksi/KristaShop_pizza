@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class Menu extends StatefulWidget {
     Menu(({Key key}):super(key:key));
 
@@ -8,8 +10,6 @@ class Menu extends StatefulWidget {
 class _MenuState extends State<Menu> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-        child:child,
-    );
+    return Placeholder();
   }
 }
