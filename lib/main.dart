@@ -41,8 +41,8 @@ var _currentIndex =0;
           currentIndex: _currentIndex,
           items:[
       BottomNavigationBarItem(icon:Icon(Icons.local_pizza),label: "Меню"),
-      BottomNavigationBarItem(icon:Icon(Icons.shop),label: "Корзина"),
-      BottomNavigationBarItem(icon:Icon(Icons.people),label: "Профиль"),
+      BottomNavigationBarItem(icon:Icon(Icons.shopping_cart),label: "Корзина"),
+      BottomNavigationBarItem(icon:Icon(Icons.fingerprint),label: "Профиль"),
       ],
       ),
     );
