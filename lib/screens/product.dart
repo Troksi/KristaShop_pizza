@@ -61,10 +61,11 @@ class _ProductState extends State<Product> {
                         children:
                             <Widget>[                                
                                 RaisedButton(
+                                    icon:Icon(Icon.plus_circle),
                                     shape: RoundedRectangleBorder(
                                         borderRadius: BorderRadius.circular(44.0),
                                         side: BorderSide(color: Colors.green)),                                
-                                    color: Colors.green,
+                                    color: Colors.red[900],
                                     textColor: Colors.white,
                                     child: Container(
                                         padding: EdgeInsets.all(11),
