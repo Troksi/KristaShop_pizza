@@ -42,7 +42,7 @@ var _currentIndex =0;
               setState((){
                   _currentIndex = selectedIndex;
               });
-          }
+          },
           currentIndex: _currentIndex,
           items:[
       BottomNavigationBarItem(icon:Icon(Icons.local_pizza),label: "Меню"),
