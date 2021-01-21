@@ -1,45 +1,94 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pizza/models/productModel.dart';
-import 'package:pizza/screens/detailScreen.dart';
+import 'package:pizza/screens/data.dart';
 
-class ProductsScreen extends StatefulWidget {
-  ProductsScreen() : super();
+class Product extends StatefulWidget {
+  final ProductModel model;
+
+  Product({Key key, this.model}) : super(key: key);
 
   @override
-  _ProductsScreenState createState() => _ProductsScreenState();
+  _ProductState createState() => _ProductState(model);
 }
 
-class _ProductsScreenState extends State<ProductsScreen> {
-  List<ProductModel> models = new List<ProductModel>();
+class _ProductState extends State<Product> {
+  final ProductModel model;
 
-  @override
-  void initState() {
-    models.add(new ProductModel("Ботинки", "Почти новые", "20 руб"));
-    models.add(new ProductModel("Шорты", "Чуть-чуть воняют", "120 руб"));
-    models.add(new ProductModel("Носки", "Всего 4 дырки на каждом", "5 руб"));
-    models.add(new ProductModel(
-        "Футболка", "Крутой желтый рисунок подмышками", "200 руб"));
-    models.add(new ProductModel("Куртка", "Рукова продаю отдельно", "100 руб"));
-
-    super.initState();
-  }
+  _ProductState(this.model);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: ListView.builder(
-            itemCount: models.length,
-            itemBuilder: (BuildContext context, int index) {
-              return ListTile(
-                  title: Text(models[index].title),
-                  leading: Icon(Icons.accessible),
-                  subtitle: Text(models[index].subtitle),
-                  trailing: Text(models[index].price),
-                  onTap: () {
-                    Navigator.of(context).push(CupertinoPageRoute(
-                        builder: (context) => DetailScreen(models[index])));
-                  });
-            }));
+        appBar: AppBar(
+            title: Text(model.title)
+        ),
+        body:         
+        Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+                AspectRatio(
+                    aspectRatio: 1,
+                    child: Image.network(
+                        model.imgUrl,
+                        fit: BoxFit.cover,)
+                    ),
+                Padding(
+                    padding: EdgeInsets.all(16),
+                    child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                            Text(
+                                model.title, 
+                                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold), 
+                            ),
+                            Text(
+                                model.price.toString() + " ₽", 
+                                style: TextStyle(fontSize: 20), 
+                            ),
+                            Text(model.subtitle),
+                        ],
+                    ),                    
+                ),
+                Padding(
+                    padding: EdgeInsets.all(16),
+                    
+                    child: Column(
+                        //width: double.infinity,
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children:
+                            <Widget>[                                
+                                RaisedButton(
+                                    shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(44.0),
+                                        side: BorderSide(color: Colors.green)),                                
+                                    color: Colors.green,
+                                    textColor: Colors.white,
+                                    child: Container(
+                                        padding: EdgeInsets.all(11),
+                                        child: Text(
+                                            "Купить".toUpperCase(),
+                                            style: TextStyle(fontSize: 22)
+                                        ),
+                                    ),
+                                    onPressed: () {
+                                        setState(() {
+                                            DataDumper.addCart(model);
+                                        });
+                                    },
+                                )
+                            ],
+                                
+
+                    ),
+
+                ), 
+               
+            ],
+        ),
+        
+    );
   }
 }
