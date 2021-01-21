@@ -34,7 +34,7 @@ var _currentIndex =0;
     return Scaffold(
          body: IndexedStack(
           index: _currentIndex,
-          children: [Menu(),Placeholder(),Placeholder()],
+          children: [Menu(),Cart(),Profile()],
           ),
       bottomNavigationBar: BottomNavigationBar(
           onTap: (selectedIndex){
