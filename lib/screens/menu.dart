@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-//import 'package:flutter/cupertino.dart';
-//import 'package:pizza/screens/product.dart';
-//import 'package:pizza/models/productModel.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:pizza/screens/product.dart';
+import 'package:pizza/models/productModel.dart';
 import 'package:pizza/screens/data.dart';
 
 
