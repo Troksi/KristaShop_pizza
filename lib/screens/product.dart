@@ -66,9 +66,10 @@ class _ProductState extends State<Product> {
                                             DataPreLoader.addCart(model);
                                         });
                                     }, 
-                                    tooltip:'Increment',
+                                    tooltip:'Добавить в корзину',
                                     child:Icon(Icons.add),
-                                ),                            
+                                ),
+                                FloatingActionButtonLocation.endDocked,                            
                                 //FlatButton(
                                 //    shape: RoundedRectangleBorder(
                                 //        borderRadius: BorderRadius.circular(44.0),
