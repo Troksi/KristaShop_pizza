@@ -18,12 +18,12 @@ class _MenuState extends State<Menu> {
                     padding: const EdgeInsets.all(10.0),
                     itemCount: 4,
                     itemBuilder: (ctx, i) => Container(child: Placeholder(), ),
-                    gridDelegate: SliverGridDelegateWithCrossAxisCount(
-                        crossAxisCount: 2,
-                        childAspectRatio: 3/2,
-                        crossAxisSpacing: 10,
-                        mainAxisSpacing: 10,
-                    ),
+                    //gridDelegate: SliverGridDelegateWithCrossAxisCount(
+                        //crossAxisCount: 2,
+                       // childAspectRatio: 3/2,
+                      //  crossAxisSpacing: 10,
+                    //    mainAxisSpacing: 10,
+                   // ),
                 )
         );
   }
