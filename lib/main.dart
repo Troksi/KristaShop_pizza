@@ -42,7 +42,7 @@ var _currentIndex =0;
           items:[
       BottomNavigationBarItem(icon:Icon(Icons.local_pizza),label: "Меню"),
       BottomNavigationBarItem(icon:Icon(Icons.shopping_cart),label: "Корзина"),
-      BottomNavigationBarItem(icon:Icon(Icons.perm_identity_rounded),label: "Профиль"),
+      BottomNavigationBarItem(icon:Icon(Icons.perm_identity),label: "Профиль"),
       ],
       ),
     );
