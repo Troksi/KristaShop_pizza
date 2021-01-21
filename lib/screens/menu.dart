@@ -83,7 +83,7 @@ makeList(){
 
                         onPressed: () {
                             setState(() {
-                                DataDumper.addCart(_products.elementAt(index));
+                                DataPreLoader.addCart(_products.elementAt(index));
                             });                                
                         },
                         ),
