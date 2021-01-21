@@ -17,7 +17,7 @@ class _MenuState extends State<Menu> {
   
    @override
   void initState() {
-    _products = DataDumper.getProducts();
+    _products = DataPreLoader.getProducts();
     DataDumper.getProductsOnline();
 
     super.initState();
