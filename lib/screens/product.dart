@@ -60,7 +60,7 @@ class _ProductState extends State<Product> {
                         mainAxisAlignment: MainAxisAlignment.end,
                         children:
                             <Widget>[  
-                                floatingActionButton: FloatingActionButton(
+                                FloatingActionButton(
                                    onPressed: () {
                                         setState(() {
                                             DataPreLoader.addCart(model);
