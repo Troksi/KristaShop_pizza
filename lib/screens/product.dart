@@ -60,7 +60,7 @@ class _ProductState extends State<Product> {
                         mainAxisAlignment: MainAxisAlignment.end,
                         children:
                             <Widget>[                                
-                                RaisedButton.icon(
+                                RaisedButton(
                                     shape: RoundedRectangleBorder(
                                         borderRadius: BorderRadius.circular(44.0),
                                         side: BorderSide(color: Colors.green)),                                
@@ -70,10 +70,11 @@ class _ProductState extends State<Product> {
                                         padding: EdgeInsets.all(11),
                                         child: Text(
                                             "Купить".toUpperCase(),
+                                            icon:Icon(Icons.shop),
                                             style: TextStyle(fontSize: 22)
                                         ),
                                     ),
-                                    icon:Icon(Icons.shop),
+                                    
                                     onPressed: () {
                                         setState(() {
                                             DataPreLoader.addCart(model);
