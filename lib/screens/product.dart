@@ -68,7 +68,7 @@ class _ProductState extends State<Product> {
                                     }, 
                                     tooltip:'Increment',
                                     child:Icon(Icons.add),
-                                )                            
+                                ),                            
                                 //FlatButton(
                                 //    shape: RoundedRectangleBorder(
                                 //        borderRadius: BorderRadius.circular(44.0),
