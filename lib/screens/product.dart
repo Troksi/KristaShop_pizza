@@ -61,7 +61,7 @@ class _ProductState extends State<Product> {
                         children:
                             <Widget>[                                
                                 RaisedButton(
-                                    icon:Icon(Icons.plus),
+                                    icon:Icon(Icons.shop),
                                     shape: RoundedRectangleBorder(
                                         borderRadius: BorderRadius.circular(44.0),
                                         side: BorderSide(color: Colors.green)),                                
