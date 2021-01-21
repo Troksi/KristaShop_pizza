@@ -70,7 +70,6 @@ class _ProductState extends State<Product> {
                                         padding: EdgeInsets.all(11),
                                         child: Text(
                                             "Купить".toUpperCase(),
-                                            margin: EdgeInsets.all(20.0),
                                             style: TextStyle(fontSize: 22)
                                         ),
                                     ),
