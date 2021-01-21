@@ -19,17 +19,17 @@ class DataPreLoader{
             "test 1", 
             "subtest 1", 
             10, 
-            "https://bumper-stickers.ru/47340-thickbox_default/ulybaushhiysja-smayl.jpg"));
+            "https://mir-s3-cdn-cf.behance.net/project_modules/1400/a1dccf72245989.5be11d2f208ae.png"));
         models.add(ProductModel(
             "test 2", 
             "subtest 2", 
             20, 
-            "https://bumper-stickers.ru/47340-thickbox_default/ulybaushhiysja-smayl.jpg"));
+            "https://mir-s3-cdn-cf.behance.net/project_modules/1400/a1dccf72245989.5be11d2f208ae.png"));
         models.add(ProductModel(
             "test 3", 
             "subtest 3", 
             30, 
-            "https://bumper-stickers.ru/47340-thickbox_default/ulybaushhiysja-smayl.jpg"));
+            "https://mir-s3-cdn-cf.behance.net/project_modules/1400/a1dccf72245989.5be11d2f208ae.png"));
         
         return models;
     }

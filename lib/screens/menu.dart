@@ -15,7 +15,7 @@ class _MenuState extends State<Menu> {
             title: Text('Меню'),
           ),
           body:  FutureBuilder(
-            future: DataDumper.getProductsOnline(),
+            future: DataPreLoader.getProductsOnline(),
             builder: (BuildContext context, AsyncSnapshot snapshot) {
                 if (snapshot.hasError) {
                     _onWidgetDidBuild(() {
