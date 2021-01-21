@@ -17,7 +17,23 @@ class _MenuState extends State<Menu> {
           body: GridView.builder(
                     padding: const EdgeInsets.all(10.0),
                     itemCount: 4,
-                    itemBuilder: (ctx, i) => Container(child: Placeholder(), ),
+                    itemBuilder: (BuildContext context, int index){
+                        return Card(
+                            child: ListTile(
+                                leading: Container(
+                                    width:36,
+                                    height:36,
+                                    child: Placeholder(),
+                                ),//Container
+                                title: Text("Название товара" + index.toString()),
+                                subtitle: Text("Краткое описание"),
+                                trailing: IconButton(
+                                                    icon: Icon(Icons.add_shopping_cart),
+                                                    onPressed: () {},
+                                                ),//IconButton
+                            ),//ListTitle
+                        );//Card
+                    },
                     //gridDelegate: SliverGridDelegateWithCrossAxisCount(
                         //crossAxisCount: 2,
                        // childAspectRatio: 3/2,
