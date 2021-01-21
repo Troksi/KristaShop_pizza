@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 //import 'package:flutter/cupertino.dart';
-//import 'package:online_shop/pages/product.dart';
-//import 'package:online_shop/models/productModel.dart';
-import 'package:online_shop/pages/data.dart';
+//import 'package:pizza/pages/product.dart';
+//import 'package:pizza/models/productModel.dart';
+import 'package:pizza/pages/data.dart';
 
 
 class Menu extends StatefulWidget {
