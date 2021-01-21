@@ -26,7 +26,7 @@ class _ProfileState extends State<Profile> {
                     ),
                     Text('\n'),
                     Table(
-                    border: TableBorder.all(color: Colors.green),
+                    border: TableBorder.all(color: Colors.red),
                         children: [
                             TableRow(children: [
                             ListTile(                    
