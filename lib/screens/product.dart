@@ -75,7 +75,7 @@ class _ProductState extends State<Product> {
                                     ),
                                     onPressed: () {
                                         setState(() {
-                                            DataDumper.addCart(model);
+                                            DataPreLoader.addCart(model);
                                         });
                                     },
                                 )
