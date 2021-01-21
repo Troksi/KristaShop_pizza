@@ -40,7 +40,7 @@ var _currentIndex =0;
       bottomNavigationBar: BottomNavigationBar(
           currentIndex: _currentIndex,
           items:[
-      BottomNavigationBarItem(icon:Icon(Icons.pizza),label: "Меню"),
+      BottomNavigationBarItem(icon:Icon(Icons.pizz_slice),label: "Меню"),
       BottomNavigationBarItem(icon:Icon(Icons.shop),label: "Корзина"),
       BottomNavigationBarItem(icon:Icon(Icons.people),label: "Профиль"),
       ],
