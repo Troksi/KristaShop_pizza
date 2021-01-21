@@ -76,60 +76,10 @@ class _ProfileState extends State<Profile> {
                         thickness: 1,
                         indent: 15,
                         endIndent: 15,
-                    ),
-
-                    ListTile(                    
-                        title: 
-                            Text(
-                                "Телефон номер", 
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold, 
-                                    fontSize: 16,
-                                    color: Colors.black),
-                            ),
-                        subtitle: 
-                            Text(
-                                "+7 (980) 749 75 72",
-                                style: TextStyle(
-                                    fontSize: 16, 
-                                    color: Colors.red), 
-                            ),
-                        onTap: () {},
-                    ),
-                    const Divider(
-                        color: Colors.red,
-                        height: 15,
-                        thickness: 1,
-                        indent: 15,
-                        endIndent: 15,
-                    ),
-                    ListTile(                    
-                        title: 
-                            Text(
-                                "Дата рождения", 
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold, 
-                                    fontSize: 16,
-                                    color: Colors.black),
-                            ),
-                        subtitle: 
-                            Text(
-                                "18.9.1998",
-                                style: TextStyle(
-                                    fontSize: 16, 
-                                    color: Colors.red), 
-                            ),
-                        onTap: () {},
-                    ),
-
-                          
+                    ),        
                 ],
-            ),
-            
-                
-        ),
-        
-        
+            ),    
+        ), 
     );
   }
 }
