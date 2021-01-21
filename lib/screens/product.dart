@@ -59,27 +59,36 @@ class _ProductState extends State<Product> {
                         crossAxisAlignment: CrossAxisAlignment.end,
                         mainAxisAlignment: MainAxisAlignment.end,
                         children:
-                            <Widget>[                                
-                                FlatButton(
-                                    shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(44.0),
-                                        side: BorderSide(color: Colors.green)),                                
-                                    color: Colors.red,
-                                    textColor: Colors.white,
-                                    child: Container(
-                                        padding: EdgeInsets.all(11),
-                                        child: Text(
-                                            "Купить".toUpperCase(),
-                                            style: TextStyle(fontSize: 22)
-                                        ),
-                                    ),
-                                    
-                                    onPressed: () {
+                            <Widget>[  
+                                floatingActionButton: FloatingActionButton(
+                                   onPressed: () {
                                         setState(() {
                                             DataPreLoader.addCart(model);
                                         });
-                                    },
-                                )
+                                    }, 
+                                    tooltip:'Increment',
+                                    child:Icon(Icons.add),
+                                )                            
+                                //FlatButton(
+                                //    shape: RoundedRectangleBorder(
+                                //        borderRadius: BorderRadius.circular(44.0),
+                                //        side: BorderSide(color: Colors.green)),                                
+                                //    color: Colors.red,
+                                //    textColor: Colors.white,
+                                //    child: Container(
+                                //        padding: EdgeInsets.all(11),
+                                //        child: Text(
+                                //            "Купить".toUpperCase(),
+                                //            style: TextStyle(fontSize: 22)
+                                //        ),
+                                //    ),
+                                //    
+                                //    onPressed: () {
+                                //        setState(() {
+                                //            DataPreLoader.addCart(model);
+                                //        });
+                                //    },
+                                //)
                             ],
                                 
 

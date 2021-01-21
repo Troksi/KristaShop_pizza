@@ -25,56 +25,7 @@ class _ProfileState extends State<Profile> {
                             'https://i.gifer.com/ZbS5.gif'),
                     ),
                     Text('\n'),
-                    Table(
-                    border: TableBorder.all(color: Colors.red),
-                        children: [
-                            TableRow(children: [
-                            ListTile(                    
-                                title: 
-                                    Text(
-                                        "Ваш ID",
-                                        textAlign: TextAlign.center, 
-                                        style: TextStyle(
-                                            fontWeight: FontWeight.bold, 
-                                            fontSize: 12,
-                                            color: Colors.black                                                                            
-                                        ),
-                                    ),
-                                subtitle: 
-                                    Text(
-                                        "23543259", 
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                            fontSize: 12,
-                                            color: Colors.green                                
-                                        ),
-                                    ),
-                            ),
-                            ListTile(                    
-                                title: 
-                                    Text(
-                                        "Статус",
-                                        textAlign: TextAlign.center, 
-                                        style: TextStyle(
-                                            fontWeight: FontWeight.bold, 
-                                            fontSize: 12,
-                                            color: Colors.black                                
-                                        ),                                
-                                    ),
-                                subtitle: 
-                                    Text(
-                                        "Постоянный клиент", 
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                            fontSize: 12,
-                                            color: Colors.green                                
-                                        ),
-                                    ),
-                            ),               
-                            ]),
-                        ],
-                    ),
-
+                    
                     ListTile(                    
                         title: 
                             Text(
