@@ -60,7 +60,7 @@ class _ProductState extends State<Product> {
                         mainAxisAlignment: MainAxisAlignment.end,
                         children:
                             <Widget>[                                
-                                RaisedButton.icon(
+                                FloatingActionButton(
                                     icon:Icon(Icons.shop),
                                     shape: RoundedRectangleBorder(
                                         borderRadius: BorderRadius.circular(44.0),
