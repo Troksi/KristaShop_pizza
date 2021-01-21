@@ -17,7 +17,7 @@ class _MenuState extends State<Menu> {
           body: GridView.builder(
                     padding: const EdgeInsets.all(10.0),
                     itemCount: 4,
-                    itemBuilder: (ctx, i) => Container(),
+                    itemBuilder: (ctx, i) => Container(child: Placeholder(), ),
                     gridDelegate: SliverGridDelegateWithCrossAxisCount(
                         crossAxisCount: 2,
                         childAspectRatio: 3/2,

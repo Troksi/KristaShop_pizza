@@ -41,7 +41,7 @@ var _currentIndex =0;
           onTap: (selectedIndex){
               setState((){
                   _currentIndex = selectedIndex;
-              })
+              });
           }
           currentIndex: _currentIndex,
           items:[
