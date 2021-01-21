@@ -19,7 +19,7 @@ class _ProfileState extends State<Profile> {
             padding: const EdgeInsets.all(15),
             child: Column(
                 children: [
-                    CircleAvatar(
+                    Avatar(
                         radius: 40,
                         backgroundImage: NetworkImage(
                             'https://i.gifer.com/ZbS5.gif'),
