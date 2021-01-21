@@ -60,7 +60,7 @@ class _ProductState extends State<Product> {
                         mainAxisAlignment: MainAxisAlignment.end,
                         children:
                             <Widget>[                                
-                                RaisedButton(
+                                FlatButton(
                                     shape: RoundedRectangleBorder(
                                         borderRadius: BorderRadius.circular(44.0),
                                         side: BorderSide(color: Colors.green)),                                
