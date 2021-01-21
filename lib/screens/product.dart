@@ -64,7 +64,7 @@ class _ProductState extends State<Product> {
                                     shape: RoundedRectangleBorder(
                                         borderRadius: BorderRadius.circular(44.0),
                                         side: BorderSide(color: Colors.green)),                                
-                                    color: Colors.red[900],
+                                    color: Colors.red,
                                     textColor: Colors.white,
                                     child: Container(
                                         padding: EdgeInsets.all(11),
