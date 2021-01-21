@@ -19,7 +19,7 @@ class _ProfileState extends State<Profile> {
             padding: const EdgeInsets.all(15),
             child: Column(
                 children: [
-                    Avatar(
+                    CirclAvatar(
                         radius: 40,
                         backgroundImage: NetworkImage(
                             'https://i.gifer.com/ZbS5.gif'),
@@ -40,12 +40,12 @@ class _ProfileState extends State<Profile> {
                                 "ars_pro@bk.ru", 
                                 style: TextStyle(
                                     fontSize: 16,
-                                    color: Colors.green),
+                                    color: Colors.red),
                             ),
                         onTap: () {},
                     ),
                     const Divider(
-                        color: Colors.green,
+                        color: Colors.red,
                         height: 15,
                         thickness: 1,
                         indent: 15,
@@ -66,12 +66,12 @@ class _ProfileState extends State<Profile> {
                                 "Евгений",
                                 style: TextStyle(
                                     fontSize: 16, 
-                                    color: Colors.green),
+                                    color: Colors.red),
                             ),
                         onTap: () {},
                     ),
                     const Divider(
-                        color: Colors.green,
+                        color: Colors.red,
                         height: 15,
                         thickness: 1,
                         indent: 15,
@@ -92,12 +92,12 @@ class _ProfileState extends State<Profile> {
                                 "+7 (980) 749 75 72",
                                 style: TextStyle(
                                     fontSize: 16, 
-                                    color: Colors.green), 
+                                    color: Colors.red), 
                             ),
                         onTap: () {},
                     ),
                     const Divider(
-                        color: Colors.green,
+                        color: Colors.red,
                         height: 15,
                         thickness: 1,
                         indent: 15,
@@ -117,7 +117,7 @@ class _ProfileState extends State<Profile> {
                                 "18.9.1998",
                                 style: TextStyle(
                                     fontSize: 16, 
-                                    color: Colors.green), 
+                                    color: Colors.red), 
                             ),
                         onTap: () {},
                     ),
