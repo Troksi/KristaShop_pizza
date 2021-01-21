@@ -33,11 +33,16 @@ var _currentIndex =0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Placeholder(),
+         body: IndexedStack(
+          index: _currentIndex,
+          children: [Menu(),Placeholder(),Placeholder()],
+          ),
       bottomNavigationBar: BottomNavigationBar(
+          onTap: (selectedIndex){
+              setState((){
+                  _currentIndex = selectedIndex;
+              })
+          }
           currentIndex: _currentIndex,
           items:[
       BottomNavigationBarItem(icon:Icon(Icons.local_pizza),label: "Меню"),
