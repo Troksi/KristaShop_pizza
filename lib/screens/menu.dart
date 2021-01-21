@@ -26,7 +26,7 @@ class _MenuState extends State<Menu> {
                     _onWidgetDidBuild(() {
                     Scaffold.of(context).showSnackBar(SnackBar(
                         content: Text('${snapshot.error}'),
-                        backgroundColor: Colors.red,
+                        backgroundColor: Colors.red[900],
                     ));
                     });
                 }
