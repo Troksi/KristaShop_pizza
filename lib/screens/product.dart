@@ -60,7 +60,8 @@ class _ProductState extends State<Product> {
                         mainAxisAlignment: MainAxisAlignment.end,
                         children:
                             <Widget>[  
-                                FloatingActionButton(
+                                Scaffold(
+                                floatingActionButton: FloatingActionButton(
                                    onPressed: () {
                                         setState(() {
                                             DataPreLoader.addCart(model);
@@ -68,6 +69,7 @@ class _ProductState extends State<Product> {
                                     }, 
                                     tooltip:'Increment',
                                     child:Icon(Icons.add),
+                                    )
                                 ),                            
                                 //FlatButton(
                                 //    shape: RoundedRectangleBorder(
