@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:pizza/screens/menu.dart';
+import 'package:pizza/screens/cart.dart';
+import 'package:pizza/screens/profile.dart';
+import 'package:flutter/cupertino.dart';
 
-void main() {
-  runApp(MyApp());
-}
+void main() =>  runApp(MyApp());
+
 
 class MyApp extends StatelessWidget {
   @override
@@ -11,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: MyHomePage(title: 'Flutter Demo Home Page'),
@@ -35,7 +37,7 @@ var _currentIndex =0;
     return Scaffold(
          body: IndexedStack(
           index: _currentIndex,
-          children: [Menu(),Placeholder(),Placeholder()],
+          children: [Menu(),Cart(),Profile()],
           ),
       bottomNavigationBar: BottomNavigationBar(
           onTap: (selectedIndex){
